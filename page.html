@@ -35,18 +35,24 @@
            <div class="row">
                  <div class="input-field col s6">
                     <select id = "app">
-                      <option disabled selected>Choose your app</option>
-                     
-                      <? for(var i=0;i<list.length;i++){ echo=list[i]; ?>
-                      
-                      <? }  ?>
-                      
-                      
-                      
+                      <option disabled selected>Choose your app</option>                     
+                      <? for(var i=0;i<list.length;i++){  ?>
+                      <?!=list[i]; }  ?>  
                     </select>
                     <label>Application</label>
                   </div>           
            </div><!-- CLOSE ROW --> 
+           
+           <div class="row">
+                <div class="input-field col s6">
+                  <input  id="zip" type="text" class="validate">
+                  <label for="zip">Zip Code</label>
+                </div>
+                <div class="input-field col s6">
+                  <input disabled id="est" type="text" class="validate">
+                  <label for="est">Estimate</label>
+                </div>
+           </div><!-- CLOSE ROW -->  
            
            <div class="row">
                <a id="btn" class="waves-effect waves-light btn-small indigo darken-3"><i class="material-icons left">chevron_right</i>Run it</a>
